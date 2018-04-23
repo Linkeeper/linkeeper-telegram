@@ -15,7 +15,7 @@ try {
     $responseCode = $res->getStatusCode(); // retornando o Status Code da requisição
 
     exit;
-} catch (GuzzleHttp\Exception\ClientException $e){ // capturando o Response Code caso o sistema retorne 404
+} catch (GuzzleHttp\Exception\ClientException | GuzzleHttp\Exception\ConnectException  $e){ // capturando o Response Code caso o sistema retorne 404
     $bot = new BotApi($botId); // cria nova instância da classe do BotApi
     $bot->sendMessage($chatId, 'O sistema ' . $url . ' está fora do ar'); // envia a mensagem no Telegram
 
