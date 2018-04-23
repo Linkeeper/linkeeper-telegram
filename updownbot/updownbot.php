@@ -7,8 +7,8 @@ use GuzzleHttp\Client; // carregando a classe Client do GuzzleHttp
 
 $client = new Client(); // criando nova instância do GuzzleHttp
 $url = 'https://linkeeper.in'; // url do sistema
-$botId = getenv("telegram_bot_id"); // id do bot do Telegram
-$chatId = getenv("telegram_chat_id"); // id do chat do Telegram
+$botId = getenv("LINKEEPER_TELEGRAM_BOT_ID"); // id do bot do Telegram
+$chatId = getenv("LINKEEPER_TELEGRAM_CHAT_ID"); // id do chat do Telegram
   
 try {
     $res = $client->request('GET', $url); // realizando uma requisição GET na URL
