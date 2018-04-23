@@ -1,0 +1,13 @@
+{
+    "name": "linkeeper/linkeeper-telegram",
+    "description": "Useful bots for issuing alerts",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vinícius Silva",
+            "email": "vinicius@linkeeper.in"
+        }
+    ],
+    "require": {}
+}
