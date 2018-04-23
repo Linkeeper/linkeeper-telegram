@@ -9,5 +9,8 @@
             "email": "vinicius@linkeeper.in"
         }
     ],
-    "require": {}
+    "require": {
+        "guzzlehttp/guzzle": "^6.3",
+        "telegram-bot/api": "^2.3"
+    }
 }
